@@ -1,2 +1,2 @@
 # D-LAB Django
-Dlab backend server API Django
+D-lab backend server API Django
