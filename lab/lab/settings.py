@@ -126,6 +126,7 @@ INPUT_OUTPUT_DATE_FORMAT = "%d.%m.%Y"
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication'
     ],
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',),
@@ -150,7 +151,7 @@ def check_sessions():
         print("[INFO] No sessions file")
 
 
-check_sessions()
+# check_sessions()
 
 DATE_FORMAT = INPUT_OUTPUT_DATE_FORMAT
 DATE_INPUT_FORMATS = [INPUT_OUTPUT_DATE_FORMAT]
